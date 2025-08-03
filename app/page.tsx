@@ -27,7 +27,7 @@ export default function Portfolio() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "experience", "certifications", "projects", "contact"]
+      const sections = ["home", "about", "skills", "experience", "certifications", "achivements","projects", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -69,6 +69,7 @@ export default function Portfolio() {
                 { id: "skills", label: "Skills" },
                 { id: "experience", label: "Experience" },
                 { id: "certifications", label: "Certifications" },
+                { id: "achivements", label: "Achivements" },
                 { id: "projects", label: "Projects" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
@@ -97,7 +98,7 @@ export default function Portfolio() {
     <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8">
       <img
         src="/Profile1.jpeg"
-        alt="Sagar - DevOps Engineer"
+        alt="Sagar - Software Developer"
         className="w-full h-full rounded-full object-cover border-4 border-cyan-500 shadow-xl"
       />
       <div className="absolute inset-0 rounded-full border border-cyan-400/20"></div>
@@ -110,12 +111,12 @@ export default function Portfolio() {
 
     {/* Role */}
     <div className="text-lg md:text-xl text-cyan-400 mt-4 font-medium">
-      DevOps Engineer
+      Software Developer
     </div>
 
     {/* Summary */}
     <p className="mt-4 text-gray-400 text-base md:text-lg leading-relaxed">
-      Automating infrastructure, enabling scalability, and delivering resilient DevOps solutions across cloud-native and decentralized environments.
+Innovative Developer & DevOps Engineer focused on development, automation and cloud-native solutions.
     </p>
 
     {/* Info Tags */}
@@ -151,10 +152,9 @@ export default function Portfolio() {
           </h2>
           <div className="bg-black/30 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8">
             <p className="text-lg text-gray-300 leading-relaxed text-center">
-              DevOps Engineer with 3+ years of experience in streamlining cloud migrations, automating CI/CD pipelines
-              and building secure, scalable infrastructure on Azure. Experienced in developing high-performance,
-              scalable automation applications using Python, Flask, and FastAPI. A strong collaborator focused on
-              delivering reliable and efficient solutions in fast-paced, cross-functional environments.
+Full-Stack Developer & DevOps Engineer with over 3 years of experience delivering performant, secure, and scalable web applications and infrastructure. I specialize in building modern, user-focused solutions using TypeScript, JavaScript, React, Next.js, Node.js, and MongoDB, combined with expertise in CI/CD automation, cloud infrastructure (Azure), and deployment orchestration.
+
+I'm passionate about creating efficient development pipelines and seamless user experiences, and thrive in fast-paced, collaborative environments where reliability and innovation go hand in hand. Whether it’s deploying infrastructure as code, optimizing cloud resources, or crafting interactive frontends, I bring an engineering mindset to every layer of the stack.
             </p>
           </div>
         </div>
@@ -293,6 +293,7 @@ export default function Portfolio() {
               { name: "Azure Administrator (AZ-104)", provider: "Microsoft" },
               { name: "Java Full Stack Development", provider: "StackRoute" },
               { name: "DevOps Beginner to Advanced", provider: "Koenig Solutions" },
+              { name: "Gemini Code Assist", provider: "Google" },
               { name: "GenAI Fundamentals & Google Cloud GenAI - L2", provider: "Google Cloud" },
             ].map((cert, index) => (
               <div
@@ -310,11 +311,11 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects & Achievements */}
-      <section id="projects" className="py-20 px-6">
+      {/* Achievements */}
+      <section id="achivements" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Projects & Achievements
+            Achivements
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
