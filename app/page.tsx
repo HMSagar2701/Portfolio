@@ -21,6 +21,7 @@ import {
   ExternalLink,
   ChevronDown,
 } from "lucide-react"
+import ProjectSection from "@/components/ProjectSection"
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home")
@@ -309,6 +310,9 @@ I'm passionate about creating efficient development pipelines and seamless user 
             ))}
           </div>
         </div>
+      </section>
+      <section id="projects" className="py-20 px-6 bg-black/20">
+        <ProjectSection />
       </section>
 
       {/* Achievements */}
