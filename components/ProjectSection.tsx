@@ -35,8 +35,8 @@ const projects = [
     url: "https://sol-walk.vercel.app/",
   },
   {
-    title: "DEX Prototype",
-    category: "Web3 Full Stack",
+    title: "Portfolio Website",
+    category: "NextJS Full Stack",
     description: "Portfolio Website built with NextJS",
     url: "https://sagar-portfolio-beta.vercel.app/",
   }

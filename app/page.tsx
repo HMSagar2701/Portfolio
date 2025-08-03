@@ -68,10 +68,10 @@ export default function Portfolio() {
                 { id: "home", label: "Home" },
                 { id: "about", label: "About" },
                 { id: "skills", label: "Skills" },
+                { id: "projects", label: "Projects" },
                 { id: "experience", label: "Experience" },
                 { id: "certifications", label: "Certifications" },
                 { id: "achivements", label: "Achivements" },
-                { id: "projects", label: "Projects" },
                 { id: "contact", label: "Contact" },
               ].map((item) => (
                 <button
@@ -238,7 +238,9 @@ I'm passionate about creating efficient development pipelines and seamless user 
           </div>
         </div>
       </section>
-
+      <section id="projects" className="py-20 px-6 bg-black/20">
+        <ProjectSection />
+      </section>
       {/* Experience */}
       <section id="experience" className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
@@ -310,9 +312,6 @@ I'm passionate about creating efficient development pipelines and seamless user 
             ))}
           </div>
         </div>
-      </section>
-      <section id="projects" className="py-20 px-6 bg-black/20">
-        <ProjectSection />
       </section>
 
       {/* Achievements */}
