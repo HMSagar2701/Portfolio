@@ -50,7 +50,7 @@ export default function CaseStudiesSection() {
           Projects and Case Studies
         </h2>
         <p className="text-center text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-16 leading-relaxed">
-          Explore a selection of live projects across Web3, SaaS, and creative design—each built with performance and user experience in mind.
+          Explore a selection of live projects across Web3, SaaS, and creative design-each built with performance and user experience in mind.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
