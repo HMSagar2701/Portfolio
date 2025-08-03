@@ -393,7 +393,7 @@ export default function Portfolio() {
       label: "Email",
       value: "sagarhm2701@gmail.com",
       href: "mailto:sagarhm2701@gmail.com",
-      display: "sagarhm2701@gmail.com",
+      display: <span className="text-[13px]">sagarhm2701@gmail.com</span>,
     },
     {
       icon: <Phone className="w-8 h-8" />,
