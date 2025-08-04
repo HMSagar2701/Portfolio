@@ -37,67 +37,65 @@ const projects = [
   {
     title: "Portfolio Website",
     category: "NextJS Full Stack",
-    description: "Portfolio Website built with NextJS",
+    description: "Portfolio Website built with NextJS.",
     url: "https://sagar-portfolio-beta.vercel.app/",
   }
 ];
 
 export default function CaseStudiesSection() {
   return (
-    <section className="bg-gradient-to-br from-gray-950 via-black to-gray-950 text-white py-20 px-6">
+    <section className="bg-gradient-to-br from-gray-950 via-black to-gray-950 text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
           Projects and Case Studies
         </h2>
-        <p className="text-center text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-16 leading-relaxed">
-          Explore a selection of live projects across Web3, SaaS, and creative design-each built with performance and user experience in mind.
+        <p className="text-center text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-14 leading-relaxed">
+          Explore a selection of live projects across Web3, SaaS, and creative design—each built with performance and user experience in mind.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-tr from-zinc-900 to-gray-900 border border-zinc-800 rounded-3xl overflow-hidden shadow-xl hover:shadow-cyan-500/30 transition duration-300 ease-in-out"
+              className="bg-zinc-900 border border-zinc-800 rounded-2xl shadow-md hover:shadow-cyan-500/20 transition duration-300 overflow-hidden"
             >
-              <div className="relative w-full h-[220px] bg-black">
-                <div
-                  className="origin-top-left scale-[0.25] w-[1615px] h-[900px] pointer-events-none"
-                  style={{ transformOrigin: "top left" }}
-                >
-                  <iframe
-                    src={project.url}
-                    title={project.title}
-                    width="1200"
-                    height="900"
-                    className="border-none w-full h-full"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="absolute inset-0 h-[220px] pointer-events-none" />
+              <div className="relative w-full h-48 sm:h-56 md:h-60 overflow-hidden">
+                <iframe
+                  src={project.url}
+                  title={project.title}
+                  loading="lazy"
+                  className="absolute top-0 left-0 w-full h-full scale-100 transform"
+                  style={{ pointerEvents: "none" }}
+                />
+                <div className="absolute inset-0 bg-black/30 pointer-events-none" />
               </div>
 
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-semibold text-cyan-300">
+              <div className="p-5 space-y-2">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-cyan-300">
                     {project.title}
                   </h3>
-                  <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 text-cyan-500 hover:text-white" />
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-4 h-4 text-cyan-400 hover:text-white" />
                   </Link>
                 </div>
-                <p className="text-sm font-medium text-gray-400 mb-1">{project.category}</p>
+                <p className="text-sm text-gray-400">{project.category}</p>
                 <p className="text-sm text-gray-300 leading-snug">{project.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-14 text-center">
           <Link
             href="https://github.com/HMSagar2701"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-cyan-400 underline underline-offset-4 hover:text-white text-lg"
+            className="inline-block text-cyan-400 hover:text-white underline underline-offset-4 text-base sm:text-lg transition"
           >
             Explore More Projects on GitHub →
           </Link>
