@@ -59,15 +59,14 @@ export default function CaseStudiesSection() {
               key={idx}
               className="bg-zinc-900 border border-zinc-800 rounded-2xl shadow-md hover:shadow-cyan-500/20 transition duration-300 overflow-hidden"
             >
-              <div className="relative w-full h-48 sm:h-56 md:h-60 overflow-hidden">
+              <div className="relative w-full h-64 sm:h-72 md:h-80 overflow-hidden">
                 <iframe
                   src={project.url}
                   title={project.title}
                   loading="lazy"
-                  className="absolute top-0 left-0 w-full h-full scale-100 transform"
-                  style={{ pointerEvents: "none" }}
+                  className="w-full h-full border-none"
+                  allowFullScreen
                 />
-                <div className="absolute inset-0 bg-black/30 pointer-events-none" />
               </div>
 
               <div className="p-5 space-y-2">
